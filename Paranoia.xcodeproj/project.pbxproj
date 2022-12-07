@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */; };
 		AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D5293F79CC00983812 /* AppDelegate.swift */; };
 		AEBE19D8293F79CC00983812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D7293F79CC00983812 /* SceneDelegate.swift */; };
 		AEBE19DA293F79CC00983812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D9293F79CC00983812 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.debug.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.debug.xcconfig"; sourceTree = "<group>"; };
 		AEBE19D2293F79CC00983812 /* Paranoia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paranoia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBE19D5293F79CC00983812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBE19D7293F79CC00983812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		AEBE19DE293F79CD00983812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
+		BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				AEBE19D4293F79CC00983812 /* Paranoia */,
 				AEBE19D3293F79CC00983812 /* Products */,
+				E8D987E99F17732EDF1FF5A3 /* Pods */,
+				DFA143D529E1D0019E5E63DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Paranoia;
 			sourceTree = "<group>";
 		};
+		DFA143D529E1D0019E5E63DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8D987E99F17732EDF1FF5A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */,
+				B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBE19E6293F79CD00983812 /* Build configuration list for PBXNativeTarget "Paranoia" */;
 			buildPhases = (
+				2FE1112D02BA7A2DCEEBBC4F /* [CP] Check Pods Manifest.lock */,
 				AEBE19CE293F79CC00983812 /* Sources */,
 				AEBE19CF293F79CC00983812 /* Frameworks */,
 				AEBE19D0293F79CC00983812 /* Resources */,
+				1AF6452D13DA1B8C3558E78C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AF6452D13DA1B8C3558E78C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Paranoia/Pods-Paranoia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Paranoia/Pods-Paranoia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Paranoia/Pods-Paranoia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FE1112D02BA7A2DCEEBBC4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Paranoia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEBE19CE293F79CC00983812 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		AEBE19E7293F79CD00983812 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		AEBE19E8293F79CD00983812 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
