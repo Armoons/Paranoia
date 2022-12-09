@@ -9,6 +9,10 @@ import UIKit
 
 class startViewController: UIViewController {
     
+//    navigationController?.navigationBar.tintColor = .white
+//    navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton_image")
+//    navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButton_image")
+    
     override func loadView() {
         self.view = StartView()
     }
@@ -23,18 +27,5 @@ class startViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "", style: .plain, target: nil, action: nil)
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

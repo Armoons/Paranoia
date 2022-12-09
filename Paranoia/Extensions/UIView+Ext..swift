@@ -19,7 +19,7 @@ extension UIView {
         let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
         switch page {
         case .startPage:
-            imageViewBackground.image = UIImage(named: "backgroundImage")
+            imageViewBackground.image = UIImage(named: "background_image")
             
         }
         

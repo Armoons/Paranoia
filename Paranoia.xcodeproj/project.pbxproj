@@ -12,12 +12,12 @@
 		AE6517332943F24300385555 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517322943F24300385555 /* StartView.swift */; };
 		AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517342943F2B800385555 /* UIView+Ext..swift */; };
 		AE6517382943F41D00385555 /* Enums&structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517372943F41D00385555 /* Enums&structs.swift */; };
+		AE65173A2943FB1900385555 /* WhiteDefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517392943FB1900385555 /* WhiteDefaultButton.swift */; };
 		AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D5293F79CC00983812 /* AppDelegate.swift */; };
 		AEBE19D8293F79CC00983812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D7293F79CC00983812 /* SceneDelegate.swift */; };
 		AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DB293F79CC00983812 /* Main.storyboard */; };
 		AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DE293F79CD00983812 /* Assets.xcassets */; };
 		AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */; };
-		AEBE19EA2940E91B00983812 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19E92940E91B00983812 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +26,7 @@
 		AE6517322943F24300385555 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		AE6517342943F2B800385555 /* UIView+Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext..swift"; sourceTree = "<group>"; };
 		AE6517372943F41D00385555 /* Enums&structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums&structs.swift"; sourceTree = "<group>"; };
+		AE6517392943FB1900385555 /* WhiteDefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteDefaultButton.swift; sourceTree = "<group>"; };
 		AEBE19D2293F79CC00983812 /* Paranoia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paranoia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBE19D5293F79CC00983812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBE19D7293F79CC00983812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		AEBE19DE293F79CD00983812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEBE19E92940E91B00983812 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
 		BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,6 +58,49 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AE65173B2943FF0900385555 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE65173C2943FF1A00385555 /* Buttons */,
+				AE6517372943F41D00385555 /* Enums&structs.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE65173C2943FF1A00385555 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AE6517392943FB1900385555 /* WhiteDefaultButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		AE65173D2943FF2C00385555 /* VC&V */ = {
+			isa = PBXGroup;
+			children = (
+				AE65173E2943FF4000385555 /* Start */,
+			);
+			path = "VC&V";
+			sourceTree = "<group>";
+		};
+		AE65173E2943FF4000385555 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				AE65172E2943EED200385555 /* startViewController.swift */,
+				AE6517322943F24300385555 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		AE65173F2943FF5100385555 /* XcodeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE19D5293F79CC00983812 /* AppDelegate.swift */,
+				AEBE19D7293F79CC00983812 /* SceneDelegate.swift */,
+			);
+			path = XcodeFiles;
+			sourceTree = "<group>";
+		};
 		AEBE19C9293F79CC00983812 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +122,9 @@
 		AEBE19D4293F79CC00983812 /* Paranoia */ = {
 			isa = PBXGroup;
 			children = (
-				AEBE19D5293F79CC00983812 /* AppDelegate.swift */,
-				AEBE19D7293F79CC00983812 /* SceneDelegate.swift */,
-				AE65172E2943EED200385555 /* startViewController.swift */,
-				AE6517322943F24300385555 /* StartView.swift */,
-				AEBE19E92940E91B00983812 /* ViewController2.swift */,
-				AE6517372943F41D00385555 /* Enums&structs.swift */,
+				AE65173F2943FF5100385555 /* XcodeFiles */,
+				AE65173D2943FF2C00385555 /* VC&V */,
+				AE65173B2943FF0900385555 /* Resources */,
 				AEBE19DB293F79CC00983812 /* Main.storyboard */,
 				AEBE19DE293F79CD00983812 /* Assets.xcassets */,
 				AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */,
@@ -227,8 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE65172F2943EED200385555 /* startViewController.swift in Sources */,
+				AE65173A2943FB1900385555 /* WhiteDefaultButton.swift in Sources */,
 				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
-				AEBE19EA2940E91B00983812 /* ViewController2.swift in Sources */,
 				AE6517332943F24300385555 /* StartView.swift in Sources */,
 				AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */,
 				AE6517382943F41D00385555 /* Enums&structs.swift in Sources */,

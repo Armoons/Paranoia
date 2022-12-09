@@ -16,3 +16,8 @@ struct Colors {
     static let backgroundColor = UIColor(red: 196/255, green: 145/255, blue: 172/255, alpha: 1)
 }
 
+struct Images {
+    static let title: UIImage = UIImage(named: "title_image") ?? UIImage()
+    
+}
+
