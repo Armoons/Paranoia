@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */; };
+		AE65172F2943EED200385555 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65172E2943EED200385555 /* startViewController.swift */; };
+		AE6517332943F24300385555 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517322943F24300385555 /* StartView.swift */; };
+		AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517342943F2B800385555 /* UIView+Ext..swift */; };
+		AE6517382943F41D00385555 /* Enums&structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517372943F41D00385555 /* Enums&structs.swift */; };
 		AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D5293F79CC00983812 /* AppDelegate.swift */; };
 		AEBE19D8293F79CC00983812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D7293F79CC00983812 /* SceneDelegate.swift */; };
-		AEBE19DA293F79CC00983812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D9293F79CC00983812 /* ViewController.swift */; };
 		AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DB293F79CC00983812 /* Main.storyboard */; };
 		AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DE293F79CD00983812 /* Assets.xcassets */; };
 		AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */; };
+		AEBE19EA2940E91B00983812 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19E92940E91B00983812 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.debug.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.debug.xcconfig"; sourceTree = "<group>"; };
+		AE65172E2943EED200385555 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
+		AE6517322943F24300385555 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		AE6517342943F2B800385555 /* UIView+Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext..swift"; sourceTree = "<group>"; };
+		AE6517372943F41D00385555 /* Enums&structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums&structs.swift"; sourceTree = "<group>"; };
 		AEBE19D2293F79CC00983812 /* Paranoia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paranoia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBE19D5293F79CC00983812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBE19D7293F79CC00983812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEBE19D9293F79CC00983812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AEBE19DC293F79CC00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEBE19DE293F79CD00983812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBE19E92940E91B00983812 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
 		BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE6517362943F2C600385555 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE6517342943F2B800385555 /* UIView+Ext..swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AEBE19C9293F79CC00983812 = {
 			isa = PBXGroup;
 			children = (
@@ -65,11 +81,15 @@
 			children = (
 				AEBE19D5293F79CC00983812 /* AppDelegate.swift */,
 				AEBE19D7293F79CC00983812 /* SceneDelegate.swift */,
-				AEBE19D9293F79CC00983812 /* ViewController.swift */,
+				AE65172E2943EED200385555 /* startViewController.swift */,
+				AE6517322943F24300385555 /* StartView.swift */,
+				AEBE19E92940E91B00983812 /* ViewController2.swift */,
+				AE6517372943F41D00385555 /* Enums&structs.swift */,
 				AEBE19DB293F79CC00983812 /* Main.storyboard */,
 				AEBE19DE293F79CD00983812 /* Assets.xcassets */,
 				AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */,
 				AEBE19E3293F79CD00983812 /* Info.plist */,
+				AE6517362943F2C600385555 /* Extensions */,
 			);
 			path = Paranoia;
 			sourceTree = "<group>";
@@ -88,7 +108,6 @@
 				3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */,
 				B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,8 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBE19DA293F79CC00983812 /* ViewController.swift in Sources */,
+				AE65172F2943EED200385555 /* startViewController.swift in Sources */,
+				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
+				AEBE19EA2940E91B00983812 /* ViewController2.swift in Sources */,
+				AE6517332943F24300385555 /* StartView.swift in Sources */,
 				AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */,
+				AE6517382943F41D00385555 /* Enums&structs.swift in Sources */,
 				AEBE19D8293F79CC00983812 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +380,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RC278SCP9R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Paranoia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -385,6 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RC278SCP9R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Paranoia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
