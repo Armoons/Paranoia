@@ -10,6 +10,8 @@ import SnapKit
 
 class StartView: UIView {
     
+    var completion: ((startViewButtons)->())?
+    
     private let titleImage: UIImageView = {
         let iv = UIImageView()
         iv.image = Images.title
@@ -37,7 +39,21 @@ class StartView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc func startTapped(sender: UIButton) {
+        completion!(startViewButtons.startButton)
+    }
+    
+    @objc func rulesTapped(sender: UIButton) {
+        completion!(startViewButtons.rulesButton)
+    }
+    
+
     func setupUI() {
+        
+        startButton.addTarget(self, action: #selector(startTapped), for: .touchUpInside)
+        rulesButton.addTarget(self, action: #selector(rulesTapped), for: .touchUpInside)
+
+
         self.backgroundColor = Colors.backgroundColor
         self.addBackground(page: .startPage)
         

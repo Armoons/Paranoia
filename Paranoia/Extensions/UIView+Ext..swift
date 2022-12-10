@@ -20,8 +20,11 @@ extension UIView {
         switch page {
         case .startPage:
             imageViewBackground.image = UIImage(named: "background_image")
-            
+        case .categoryPage:
+            imageViewBackground.image = UIImage(named: "Group 2")
         }
+
+        
         
         // you can change the content mode:
         imageViewBackground.contentMode = UIView.ContentMode.scaleAspectFill

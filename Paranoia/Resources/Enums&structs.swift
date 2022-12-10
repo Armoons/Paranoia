@@ -10,6 +10,12 @@ import UIKit
 
 enum PageType {
     case startPage
+    case categoryPage
+}
+
+enum startViewButtons {
+    case startButton
+    case rulesButton
 }
 
 struct Colors {
@@ -18,6 +24,6 @@ struct Colors {
 
 struct Images {
     static let title: UIImage = UIImage(named: "title_image") ?? UIImage()
-    
+
 }
 
