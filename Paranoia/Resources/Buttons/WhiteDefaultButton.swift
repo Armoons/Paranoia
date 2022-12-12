@@ -8,6 +8,7 @@
 import UIKit
 
 class WhiteDefaultButton: UIButton {
+
     
     init(title: String) {
         super.init(frame: .zero)

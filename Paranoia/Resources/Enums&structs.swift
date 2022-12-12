@@ -13,6 +13,13 @@ enum PageType {
     case categoryPage
 }
 
+enum Categories {
+    case nice
+    case nasty
+    case interesting
+    case vulgar
+}
+
 enum startViewButtons {
     case startButton
     case rulesButton
@@ -24,6 +31,15 @@ struct Colors {
 
 struct Images {
     static let title: UIImage = UIImage(named: "title_image") ?? UIImage()
+    static let rex: UIImage = UIImage(named: "rex_image") ?? UIImage()
+    static let random1: UIImage = UIImage(named: "random1_image") ?? UIImage()
+    static let happy: UIImage = UIImage(named: "happy_image") ?? UIImage()
+    static let nextArrow: UIImage = UIImage(named: "nextArrow_image") ?? UIImage()
+    static let chooseCategory: UIImage = UIImage(named: "chooseCategory_image") ?? UIImage()
+
+
+
+
 
 }
 
