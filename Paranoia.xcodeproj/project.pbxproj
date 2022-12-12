@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */; };
 		AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBA2947D71700D1EFE4 /* Model.swift */; };
+		AE267EBD2947EAEE00D1EFE4 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */; };
+		AE267EBF2947EAF800D1EFE4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBE2947EAF800D1EFE4 /* RulesView.swift */; };
+		AE267EC22947F31200D1EFE4 /* RulesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EC12947F31200D1EFE4 /* RulesContentView.swift */; };
 		AE6517332943F24300385555 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517322943F24300385555 /* StartView.swift */; };
 		AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517342943F2B800385555 /* UIView+Ext..swift */; };
 		AE6517382943F41D00385555 /* Enums&structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517372943F41D00385555 /* Enums&structs.swift */; };
@@ -26,6 +29,9 @@
 /* Begin PBXFileReference section */
 		3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.debug.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.debug.xcconfig"; sourceTree = "<group>"; };
 		AE267EBA2947D71700D1EFE4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		AE267EBE2947EAF800D1EFE4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		AE267EC12947F31200D1EFE4 /* RulesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesContentView.swift; sourceTree = "<group>"; };
 		AE6517322943F24300385555 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		AE6517342943F2B800385555 /* UIView+Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext..swift"; sourceTree = "<group>"; };
 		AE6517372943F41D00385555 /* Enums&structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums&structs.swift"; sourceTree = "<group>"; };
@@ -56,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE267EC02947EAFE00D1EFE4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AE8462F329452FD1002E8E5F /* CategoryViewController.swift */,
+				AE8462F529452FEA002E8E5F /* CategoryView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		AE6517362943F2C600385555 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				AE65173E2943FF4000385555 /* Start */,
-				AE8462F329452FD1002E8E5F /* CategoryViewController.swift */,
-				AE8462F529452FEA002E8E5F /* CategoryView.swift */,
+				AE267EC02947EAFE00D1EFE4 /* Category */,
+				AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */,
+				AE267EBE2947EAF800D1EFE4 /* RulesView.swift */,
+				AE267EC12947F31200D1EFE4 /* RulesContentView.swift */,
 				AE267EBA2947D71700D1EFE4 /* Model.swift */,
 			);
 			path = "VC&V";
@@ -278,12 +295,15 @@
 				AE65173A2943FB1900385555 /* WhiteDefaultButton.swift in Sources */,
 				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
 				AE6517332943F24300385555 /* StartView.swift in Sources */,
+				AE267EC22947F31200D1EFE4 /* RulesContentView.swift in Sources */,
 				AE8462F429452FD1002E8E5F /* CategoryViewController.swift in Sources */,
 				AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */,
 				AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */,
 				AE8462F829453011002E8E5F /* StartViewController.swift in Sources */,
 				AE6517382943F41D00385555 /* Enums&structs.swift in Sources */,
+				AE267EBF2947EAF800D1EFE4 /* RulesView.swift in Sources */,
 				AEBE19D8293F79CC00983812 /* SceneDelegate.swift in Sources */,
+				AE267EBD2947EAEE00D1EFE4 /* RulesViewController.swift in Sources */,
 				AE8462F629452FEA002E8E5F /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

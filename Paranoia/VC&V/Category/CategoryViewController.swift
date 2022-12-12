@@ -19,8 +19,8 @@ class CategoryViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton_image")
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButton_image")
+        navigationController?.navigationBar.backIndicatorImage = Images.backButtonCategory
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = Images.backButtonCategory
     }
     
 

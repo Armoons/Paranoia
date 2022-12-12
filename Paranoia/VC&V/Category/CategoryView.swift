@@ -97,14 +97,12 @@ class CategoryView: UIView {
     @objc func nextTapped(sender: UIButton) {
 
     }
-        
     
     func tappedButton(button: WhiteDefaultButton, category: Categories) {
         button.isSelected ? Game.shared.unselectCategory(category) : Game.shared.selectCategory(category)
         button.isSelected = !button.isSelected
 
     }
-    
     
     @objc func niceTapped(sender: UIButton) {
         self.tappedButton(button: niceButton, category: .nice)
@@ -114,7 +112,6 @@ class CategoryView: UIView {
     @objc func nastyTapped(sender: UIButton) {
         self.tappedButton(button: nastyButton, category: .nasty)
         Game.shared.show()
-
     }
     
     @objc func intesersingTapped(sender: UIButton) {

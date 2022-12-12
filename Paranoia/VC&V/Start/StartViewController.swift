@@ -10,6 +10,8 @@ import UIKit
 class StartViewController: UIViewController {
     
     private let startView = StartView()
+    private let rulesVC = RulesViewController()
+
     private let categoryVC = CategoryViewController()
 //    navigationController?.navigationBar.tintColor = .white
 //    navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton_image")
@@ -33,7 +35,7 @@ class StartViewController: UIViewController {
             case .startButton:
                 self.navigationController?.show(self.categoryVC, sender: self)
             case .rulesButton:
-                print("b")
+                self.navigationController?.show(self.rulesVC, sender: self)
             }
         }
     }

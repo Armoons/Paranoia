@@ -36,8 +36,14 @@ struct Images {
     static let happy: UIImage = UIImage(named: "happy_image") ?? UIImage()
     static let nextArrow: UIImage = UIImage(named: "nextArrow_image") ?? UIImage()
     static let chooseCategory: UIImage = UIImage(named: "chooseCategory_image") ?? UIImage()
+    static let backButtonRules: UIImage = UIImage(named: "backButtonRules_image") ?? UIImage()
+    static let backButtonCategory: UIImage = UIImage(named: "backButton_image") ?? UIImage()
+    static let rulesTitle: UIImage = UIImage(named: "rulesTitle_image") ?? UIImage()
+
+    
 
 
+    
 
 
 
