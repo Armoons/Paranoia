@@ -39,12 +39,14 @@ struct Images {
     static let backButtonRules: UIImage = UIImage(named: "backButtonRules_image") ?? UIImage()
     static let backButtonCategory: UIImage = UIImage(named: "backButton_image") ?? UIImage()
     static let rulesTitle: UIImage = UIImage(named: "rulesTitle_image") ?? UIImage()
+    static let backButtonQuestion: UIImage = UIImage(named: "backButtonQuestion_image") ?? UIImage()
+    static let baloon: UIImage = UIImage(named: "baloon_image") ?? UIImage()
+    static let pressIfReady: UIImage = UIImage(named: "pressIfReady_image") ?? UIImage()
+    static let stranger: UIImage = UIImage(named: "stranger_image") ?? UIImage()
 
     
 
-
     
-
 
 
 }

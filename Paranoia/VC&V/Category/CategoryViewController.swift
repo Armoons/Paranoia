@@ -10,6 +10,7 @@ import UIKit
 class CategoryViewController: UIViewController {
     
     private let categoryView = CategoryView()
+    private let gameVC = GameViewController()
     
     override func loadView() {
         self.view = categoryView
@@ -21,6 +22,10 @@ class CategoryViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.backIndicatorImage = Images.backButtonCategory
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = Images.backButtonCategory
+        
+        categoryView.completion = {
+            self.navigationController?.show(self.gameVC, sender: self)
+        }
     }
     
 

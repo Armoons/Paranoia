@@ -8,6 +8,9 @@
 import UIKit
 
 class CategoryView: UIView {
+    
+    var completion: (()->())?
+
         
     private let niceButton: WhiteDefaultButton = {
         let b = WhiteDefaultButton(title: "Приятные")
@@ -95,6 +98,7 @@ class CategoryView: UIView {
     
     
     @objc func nextTapped(sender: UIButton) {
+        self.completion!()
 
     }
     
