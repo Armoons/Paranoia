@@ -15,9 +15,20 @@ class CategoryViewController: UIViewController {
     override func loadView() {
         self.view = categoryView
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Game.shared.clearCategories()
+        categoryView.updateUI()
+        
+        print("---!! Category willAppear")
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("---!! CategoryDidLoad")
         
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.backIndicatorImage = Images.backButtonCategory
@@ -25,9 +36,7 @@ class CategoryViewController: UIViewController {
         
         categoryView.completion = {
             self.navigationController?.show(self.gameVC, sender: self)
+            Game.shared.generateQuesions()
         }
     }
-    
-
-
 }

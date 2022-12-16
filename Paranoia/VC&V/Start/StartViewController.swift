@@ -11,11 +11,7 @@ class StartViewController: UIViewController {
     
     private let startView = StartView()
     private let rulesVC = RulesViewController()
-
     private let categoryVC = CategoryViewController()
-//    navigationController?.navigationBar.tintColor = .white
-//    navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton_image")
-//    navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButton_image")
     
     override func loadView() {
         self.view = startView

@@ -43,6 +43,7 @@ struct Images {
     static let baloon: UIImage = UIImage(named: "baloon_image") ?? UIImage()
     static let pressIfReady: UIImage = UIImage(named: "pressIfReady_image") ?? UIImage()
     static let stranger: UIImage = UIImage(named: "stranger_image") ?? UIImage()
+    static let strangerHalf: UIImage = UIImage(named: "strangerHalf_image") ?? UIImage()
 
     
 

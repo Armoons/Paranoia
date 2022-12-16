@@ -23,7 +23,7 @@ class GameView: UIView {
     
     private let strangerImage: UIImageView = {
         let iv = UIImageView()
-        iv.image = Images.baloon
+        iv.image = Images.strangerHalf
         return iv
     }()
     
@@ -33,6 +33,22 @@ class GameView: UIView {
         return iv
     }()
 
+    private let questionLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.textColor = .white
+        label.textAlignment = .right
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let nextOneButton: UIButton = {
+        let b = UIButton(type: .custom)
+        b.addTarget(self, action: #selector(nextQuestionTapped), for: .touchUpInside)
+        b.translatesAutoresizingMaskIntoConstraints = false
+        b.setImage(Images.nextArrow, for: .normal)
+        return b
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,23 +60,62 @@ class GameView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func showQuestion() {
-        
+    func getQuestion() {
+        let questionText = Game.shared.getQuestion()
+        self.questionLabel.text = questionText
+    }
+
+    
+    @objc func startTapped(){
+        questionBackground()
+        getQuestion()
     }
     
-    @objc func imageTapped(){
-        self.showQuestion()
+    @objc func nextQuestionTapped(){
+        getQuestion()
+    }
+    
+    func questionBackground() {
+        baloonImage.isHidden = true
+        pressImage.isHidden = true
+        
+        strangerImage.isHidden = false
+        nextOneButton.isHidden = false
+        questionLabel.isHidden = false
+    }
+    
+    func startBackground() {
+        baloonImage.isHidden = false
+        pressImage.isHidden = false
+        
+        strangerImage.isHidden = true
+        nextOneButton.isHidden = true
+        questionLabel.isHidden = true
     }
     
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(startTapped))
         pressImage.isUserInteractionEnabled = true
         pressImage.addGestureRecognizer(tapGestureRecognizer)
 
-        for ui in [titleImage, baloonImage, pressImage, strangerImage] {
+        for ui in [titleImage, baloonImage, pressImage, strangerImage, questionLabel, nextOneButton] {
             self.addSubview(ui)
+        }
+        
+        
+        self.sendSubviewToBack(strangerImage)
+        
+        strangerImage.snp.makeConstraints{
+            $0.topMargin.equalToSuperview().inset(20)
+            $0.width.equalTo(453)
+            $0.height.equalTo(834)
+            $0.leading.equalToSuperview()
+            
+//            $0.width.equalTo(853)
+//            $0.height.equalTo(915)
+//            $0.trailing.equalToSuperview().inset(-30)
         }
         
         titleImage.snp.makeConstraints{
@@ -84,16 +139,16 @@ class GameView: UIView {
             $0.height.equalTo(80)
         }
         
-        strangerImage.snp.makeConstraints{
-            $0.topMargin.equalToSuperview().inset(20)
-            $0.width.equalTo(853)
-            $0.height.equalTo(915)
-            $0.trailing.equalToSuperview().inset(-30)
+        questionLabel.snp.makeConstraints{
+            $0.trailing.leading.equalToSuperview().inset(20)
+            $0.bottom.equalTo(nextOneButton.snp_topMargin).inset(-40)
         }
         
-        baloonImage.isHidden = true
-        
-        
-        
+        nextOneButton.snp.makeConstraints{
+            $0.bottomMargin.equalToSuperview().inset(30)
+            $0.trailing.equalToSuperview().inset(30)
+            $0.height.equalTo(50)
+            $0.width.equalTo(84)
+        }
     }
 }

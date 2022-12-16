@@ -10,7 +10,6 @@ import UIKit
 class CategoryView: UIView {
     
     var completion: (()->())?
-
         
     private let niceButton: WhiteDefaultButton = {
         let b = WhiteDefaultButton(title: "Приятные")
@@ -56,7 +55,6 @@ class CategoryView: UIView {
         b.addTarget(self, action: #selector(nextTapped), for: .touchUpInside)
         b.translatesAutoresizingMaskIntoConstraints = false
         b.setImage(Images.nextArrow, for: .normal)
-
         return b
     }()
     
@@ -103,35 +101,58 @@ class CategoryView: UIView {
     }
     
     func tappedButton(button: WhiteDefaultButton, category: Categories) {
-        button.isSelected ? Game.shared.unselectCategory(category) : Game.shared.selectCategory(category)
+        print("isSelected", button.isSelected)
+        
+        if button.isSelected {
+            Game.shared.unselectCategory(category)
+            button.backgroundColor = .white
+        } else {
+            Game.shared.selectCategory(category)
+            button.backgroundColor = .gray
+        }
         button.isSelected = !button.isSelected
-
     }
     
     @objc func niceTapped(sender: UIButton) {
         self.tappedButton(button: niceButton, category: .nice)
+        nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
     }
     
     @objc func nastyTapped(sender: UIButton) {
         self.tappedButton(button: nastyButton, category: .nasty)
+        nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
     }
     
     @objc func intesersingTapped(sender: UIButton) {
         self.tappedButton(button: interestingButton, category: .interesting)
+        nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
 
     }
     
     @objc func vulgarTapped(sender: UIButton) {
         self.tappedButton(button: vulgarButton, category: .vulgar)
+        nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
+    }
+    
+    func updateUI() {
+        nextButton.isEnabled = !Game.shared.isCategoryEmpty()
+        for b in [niceButton, nastyButton, interestingButton, vulgarButton] {
+            if b.isSelected {
+                b.isSelected = false
+                b.backgroundColor = .white
+            }
+        }
     }
     
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
         self.addBackground(page: .categoryPage)
+        
+        nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         
         for ui in [categotyStackView, rexImage, happyImage, random1Image, nextButton, titleImage] {
             self.addSubview(ui)
@@ -170,7 +191,5 @@ class CategoryView: UIView {
 //            $0.width.equalTo(rexImage.snp.height).multipliedBy(96/374)
 //
 //        }
-
     }
-
 }

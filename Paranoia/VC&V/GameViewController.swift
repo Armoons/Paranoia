@@ -15,12 +15,21 @@ class GameViewController: UIViewController {
         self.view = gameView
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("---!! Game didAppear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        navigationController?.navigationBar.topItem?.title = ""
-
-
+        gameView.startBackground()
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("---!! Game didLoad")
+        
+        navigationController?.navigationBar.topItem?.title = ""
+    }
 }
