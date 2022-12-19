@@ -15,9 +15,21 @@ class RulesContentView: UIView {
         iv.image = Images.rulesTitle
         return iv
     }()
+    
+    private let questionLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 35)
+        label.textColor = .white
+        label.textAlignment = .right
+        label.text = ""
+        label.numberOfLines = 0
+        return label
+    }()
       
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.translatesAutoresizingMaskIntoConstraints = false
+
         
         setupUI()
     }
@@ -29,13 +41,23 @@ class RulesContentView: UIView {
     
     func setupUI() {
         
+        self.backgroundColor = .green
+        
         for ui in [titleImage] {
             self.addSubview(ui)
         }
         
+//        questionLabel.snp.makeConstraints{
+//            $0.centerX.equalToSuperview()
+//            $0.top.equalToSuperview().inset(10)
+//        }
+        
         titleImage.snp.makeConstraints{
-            $0.center.equalToSuperview()
-//            $0.topMargin.equalToSuperview().offset(10)
+            $0.centerX.equalToSuperview()
+//            $0.leading.equalToSuperview().inset(10)
+//            $0.trailing.equalToSuperview().inset(10)
+            $0.top.equalToSuperview().inset(10)
+//            $0.height.equalTo(69)
 //            $0.width.equalTo(titleImage.snp.height).multipliedBy(217 / 69)
         }
     }

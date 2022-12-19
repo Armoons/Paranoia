@@ -11,17 +11,24 @@ class RulesView: UIView {
     
     private let contentView = RulesContentView()
     
+    private let stackView: UIStackView = {
+        let sv = UIStackView()
+        
+        return sv
+
+    }()
+    
     private let scrollView: UIScrollView = {
         let sv = UIScrollView()
-        sv.translatesAutoresizingMaskIntoConstraints = false
-        sv.backgroundColor = .cyan
+        sv.backgroundColor = .blue
+        
 
         return sv
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+                
         setupUI()
     }
     
@@ -33,18 +40,20 @@ class RulesView: UIView {
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
         
-        scrollView.addSubview(contentView)
-        
         for ui in [scrollView] {
             self.addSubview(ui)
         }
-                
         scrollView.snp.makeConstraints{
-            $0.leading.trailing.equalToSuperview()
-            $0.top.equalTo(self.safeAreaLayoutGuide.snp.top)
-            $0.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom)
-            
+            $0.edges.equalTo(safeAreaLayoutGuide)
         }
+        
+        scrollView.addSubview(contentView)
+        
+        contentView.snp.makeConstraints{
+            $0.width.top.bottom.centerX.equalToSuperview()
+        }
+        
+
 
     }
 }

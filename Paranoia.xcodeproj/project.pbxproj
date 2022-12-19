@@ -117,8 +117,7 @@
 				AE267EC02947EAFE00D1EFE4 /* Category */,
 				AE2799C92949E12100AEECC6 /* Rules */,
 				AE267EBA2947D71700D1EFE4 /* Model.swift */,
-				AE2799CA2949E14800AEECC6 /* GameViewController.swift */,
-				AE2799CC2949E15200AEECC6 /* GameView.swift */,
+				AE90008D294DD39200970C0E /* Game */,
 			);
 			path = "VC&V";
 			sourceTree = "<group>";
@@ -139,6 +138,15 @@
 				AEBE19D7293F79CC00983812 /* SceneDelegate.swift */,
 			);
 			path = XcodeFiles;
+			sourceTree = "<group>";
+		};
+		AE90008D294DD39200970C0E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				AE2799CA2949E14800AEECC6 /* GameViewController.swift */,
+				AE2799CC2949E15200AEECC6 /* GameView.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		AEBE19C9293F79CC00983812 = {
