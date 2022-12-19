@@ -16,12 +16,22 @@ class RulesContentView: UIView {
         return iv
     }()
     
-    private let questionLabel: UILabel = {
+    private let eyeImage: UIImageView = {
+        let iv = UIImageView()
+        iv.image = Images.eye
+        return iv
+    }()
+        
+    private let firstLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 35)
+        label.attributedText = NSMutableAttributedString()
+            .bold("Паранойя - ")
+            .normal("игра, благодарая которой Вы можете узнать все ")
+            .bold("грязные мыслишки ")
+            .normal("своих друзей")
+
         label.textColor = .white
-        label.textAlignment = .right
-        label.text = ""
+        label.textAlignment = .center
         label.numberOfLines = 0
         return label
     }()
@@ -41,24 +51,30 @@ class RulesContentView: UIView {
     
     func setupUI() {
         
-        self.backgroundColor = .green
-        
-        for ui in [titleImage] {
+        for ui in [titleImage, firstLabel, eyeImage] {
             self.addSubview(ui)
         }
         
-//        questionLabel.snp.makeConstraints{
-//            $0.centerX.equalToSuperview()
-//            $0.top.equalToSuperview().inset(10)
-//        }
-        
         titleImage.snp.makeConstraints{
             $0.centerX.equalToSuperview()
-//            $0.leading.equalToSuperview().inset(10)
-//            $0.trailing.equalToSuperview().inset(10)
             $0.top.equalToSuperview().inset(10)
-//            $0.height.equalTo(69)
-//            $0.width.equalTo(titleImage.snp.height).multipliedBy(217 / 69)
+            $0.height.equalTo(69)
+            $0.width.equalTo(titleImage.snp.height).multipliedBy(217 / 69)
+
+        }
+        
+        firstLabel.snp.makeConstraints{
+            $0.centerX.equalToSuperview()
+            $0.width.equalToSuperview()
+            $0.top.equalTo(titleImage.snp.bottom).offset(15)
+        }
+        
+        eyeImage.snp.makeConstraints{
+            $0.top.equalTo(firstLabel.snp.bottom).offset(15)
+            $0.centerX.equalToSuperview()
+            $0.height.equalTo(88)
+            $0.width.equalTo(eyeImage.snp.height).multipliedBy(213 / 88)
+
         }
     }
 }

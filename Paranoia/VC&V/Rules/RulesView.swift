@@ -11,18 +11,8 @@ class RulesView: UIView {
     
     private let contentView = RulesContentView()
     
-    private let stackView: UIStackView = {
-        let sv = UIStackView()
-        
-        return sv
-
-    }()
-    
     private let scrollView: UIScrollView = {
         let sv = UIScrollView()
-        sv.backgroundColor = .blue
-        
-
         return sv
     }()
 
