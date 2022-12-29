@@ -30,6 +30,7 @@
 		AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DB293F79CC00983812 /* Main.storyboard */; };
 		AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DE293F79CD00983812 /* Assets.xcassets */; };
 		AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */; };
+		AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED3D410295E3E030060B212 /* paranoia font.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		AEBE19DE293F79CD00983812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED3D410295E3E030060B212 /* paranoia font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "paranoia font.ttf"; sourceTree = "<group>"; };
 		B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
 		BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 		AE65173B2943FF0900385555 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AED3D410295E3E030060B212 /* paranoia font.ttf */,
 				AE90009229509E7500970C0E /* Gilroy-Regular.ttf */,
 				AE90009429509E8600970C0E /* Gilroy-Bold.ttf */,
 				AE900090295099E900970C0E /* RuleLabel.swift */,
@@ -276,6 +279,7 @@
 				AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */,
 				AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */,
 				AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */,
+				AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

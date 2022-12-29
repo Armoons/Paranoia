@@ -35,7 +35,7 @@ class GameView: UIView {
 
     private let questionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 35)
+        label.font = UIFont.init(name: "Paranoia_font_by_LKA", size: 35)
         label.textColor = .white
         label.textAlignment = .right
         label.numberOfLines = 0

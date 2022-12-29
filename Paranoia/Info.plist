@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Gilroy-Regular.ttf</string>
+		<string>paranoia font.ttf</string>
 		<string>Gilroy-Bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

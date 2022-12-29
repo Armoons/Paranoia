@@ -25,10 +25,10 @@ class RulesContentView: UIView {
     private let firstLabel: UILabel = {
         let label = UILabel()
         label.attributedText = NSMutableAttributedString()
-            .bold("Паранойя - ")
-            .normal("игра, благодарая которой Вы можете узнать все ")
-            .bold("грязные мыслишки ")
-            .normal("своих друзей")
+//            .bold("Паранойя - ")
+            .normal("Паранойя - игра, благодарая которой Вы можете узнать все грязные мыслишки своих друзей")
+//            .bold("грязные мыслишки ")
+//            .normal("своих друзей")
 
         label.textColor = .white
         label.textAlignment = .center

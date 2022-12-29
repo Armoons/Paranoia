@@ -23,7 +23,7 @@ class WhiteDefaultButton: UIButton {
     private func setupUI(){
         self.layer.cornerRadius = 30
         self.backgroundColor = .white
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 37)
+        self.titleLabel?.font = UIFont.init(name: "Paranoia_font_by_LKA", size: 50)
         self.titleLabel?.textColor = .white
         self.setTitleColor(.black, for: .normal)
         
