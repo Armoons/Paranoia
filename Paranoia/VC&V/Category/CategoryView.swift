@@ -12,14 +12,14 @@ class CategoryView: UIView {
     var completion: (()->())?
         
     private let niceButton: WhiteDefaultButton = {
-        let b = WhiteDefaultButton(title: "Приятные")
+        let b = WhiteDefaultButton(title: "Приятные", size: 40)
         b.addTarget(self, action: #selector(niceTapped), for: .touchUpInside)
         b.translatesAutoresizingMaskIntoConstraints = false
         return b
     }()
     
     private let nastyButton: WhiteDefaultButton = {
-        let b = WhiteDefaultButton(title: "Неприятные")
+        let b = WhiteDefaultButton(title: "Неприятные", size: 40)
         b.addTarget(self, action: #selector(nastyTapped), for: .touchUpInside)
 
         b.translatesAutoresizingMaskIntoConstraints = false
@@ -27,14 +27,14 @@ class CategoryView: UIView {
     }()
     
     private let interestingButton: WhiteDefaultButton = {
-        let b = WhiteDefaultButton(title: "Интересные")
+        let b = WhiteDefaultButton(title: "Интересные", size: 40)
         b.addTarget(self, action: #selector(intesersingTapped), for: .touchUpInside)
         b.translatesAutoresizingMaskIntoConstraints = false
         return b
     }()
     
     private let vulgarButton: WhiteDefaultButton = {
-        let b = WhiteDefaultButton(title: "18+")
+        let b = WhiteDefaultButton(title: "18+", size: 40)
         b.addTarget(self, action: #selector(vulgarTapped), for: .touchUpInside)
         b.translatesAutoresizingMaskIntoConstraints = false
 

@@ -15,6 +15,11 @@ class GameView: UIView {
         return iv
     }()
     
+    private let readyTapView: UIView = {
+        let v = UIView()
+        return v
+    }()
+    
     private let baloonImage: UIImageView = {
         let iv = UIImageView()
         iv.image = Images.baloon
@@ -78,15 +83,18 @@ class GameView: UIView {
     func questionBackground() {
         baloonImage.isHidden = true
         pressImage.isHidden = true
+        readyTapView.isHidden = true
         
         strangerImage.isHidden = false
         nextOneButton.isHidden = false
         questionLabel.isHidden = false
+        
     }
     
     func startBackground() {
         baloonImage.isHidden = false
         pressImage.isHidden = false
+        readyTapView.isHidden = false
         
         strangerImage.isHidden = true
         nextOneButton.isHidden = true
@@ -97,15 +105,17 @@ class GameView: UIView {
         self.backgroundColor = Colors.backgroundColor
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(startTapped))
-        pressImage.isUserInteractionEnabled = true
-        pressImage.addGestureRecognizer(tapGestureRecognizer)
+        readyTapView.addGestureRecognizer(tapGestureRecognizer)
 
-        for ui in [titleImage, baloonImage, pressImage, strangerImage, questionLabel, nextOneButton] {
+        for ui in [titleImage, baloonImage, pressImage, strangerImage, questionLabel, nextOneButton, readyTapView] {
             self.addSubview(ui)
         }
         
-        
         self.sendSubviewToBack(strangerImage)
+        
+        readyTapView.snp.makeConstraints{
+            $0.edges.equalToSuperview()
+        }
         
         strangerImage.snp.makeConstraints{
             $0.topMargin.equalToSuperview().inset(20)

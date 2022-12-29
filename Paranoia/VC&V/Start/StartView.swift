@@ -19,12 +19,12 @@ class StartView: UIView {
     }()
     
     private let startButton: WhiteDefaultButton = {
-        let b = WhiteDefaultButton(title: "НАЧАТЬ")
+        let b = WhiteDefaultButton(title: "НАЧАТЬ", size: 50)
         return b
     }()
     
     private let rulesButton: WhiteDefaultButton = {
-        let b = WhiteDefaultButton(title: "ПРАВИЛА")
+        let b = WhiteDefaultButton(title: "ПРАВИЛА", size: 50)
         return b
     }()
     
