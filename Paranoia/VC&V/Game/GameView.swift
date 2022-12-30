@@ -33,13 +33,6 @@ class GameView: UIView {
         return iv
     }()
     
-    private let strangerImage: UIImageView = {
-        let iv = UIImageView()
-        iv.image = Images.strangerHalf
-        iv.isHidden = true
-        return iv
-    }()
-    
     private let pressImage: UIImageView = {
         let iv = UIImageView()
         iv.image = Images.pressIfReady
@@ -83,6 +76,15 @@ class GameView: UIView {
         iv.isHidden = true
         return iv
     }()
+    
+    private let background4: UIImageView = {
+        let iv = UIImageView()
+        iv.image = Images.strangerHalf
+        iv.isHidden = true
+        return iv
+    }()
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -109,7 +111,7 @@ class GameView: UIView {
     
     func questionBackground() {
         
-        let backgrounds = [background1, background2, background3]
+        let backgrounds = [background1, background2, background3, background4]
         
         backgrounds[numberOfBackground].isHidden = false
 
@@ -125,10 +127,10 @@ class GameView: UIView {
     
     func startBackground() {
         
-        let backgrounds = [background1, background2, background3]
+        let backgrounds = [background1, background2, background3, background4]
         
         backgrounds[numberOfBackground].isHidden = true
-        numberOfBackground =  (numberOfBackground + 1) % 3
+        numberOfBackground =  (numberOfBackground + 1) % 4
         
         for show in [baloonImage, pressImage, readyTapView] {
             show.isHidden = false
@@ -146,11 +148,11 @@ class GameView: UIView {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(startTapped))
         readyTapView.addGestureRecognizer(tapGestureRecognizer)
 
-        for ui in [titleImage, baloonImage, pressImage, strangerImage, questionLabel, nextOneButton, readyTapView, backgroundView, background1, background2, background3] {
+        for ui in [titleImage, baloonImage, pressImage, questionLabel, nextOneButton, readyTapView, backgroundView, background1, background2, background3, background4] {
             self.addSubview(ui)
         }
         
-        for i in [background1, background2, background3] {
+        for i in [background1, background2, background3, background4] {
             self.sendSubviewToBack(i)
         }
         
@@ -178,15 +180,11 @@ class GameView: UIView {
             $0.edges.equalToSuperview()
         }
         
-        strangerImage.snp.makeConstraints{
+        background4.snp.makeConstraints{
             $0.topMargin.equalToSuperview().inset(20)
-            $0.width.equalTo(453)
-            $0.height.equalTo(834)
+//            $0.width.equalTo(453)
+//            $0.height.equalTo(834)
             $0.leading.equalToSuperview()
-            
-//            $0.width.equalTo(853)
-//            $0.height.equalTo(915)
-//            $0.trailing.equalToSuperview().inset(-30)
         }
         
         titleImage.snp.makeConstraints{
