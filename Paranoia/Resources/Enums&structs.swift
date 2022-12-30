@@ -45,10 +45,14 @@ struct Images {
     static let stranger: UIImage = UIImage(named: "stranger_image") ?? UIImage()
     static let strangerHalf: UIImage = UIImage(named: "strangerHalf_image") ?? UIImage()
     static let eye: UIImage = UIImage(named: "eye_image") ?? UIImage()
+    static let bigPig: UIImage = UIImage(named: "bigPig") ?? UIImage()
+    static let coolCrocodile: UIImage = UIImage(named: "coolCrocodile") ?? UIImage()
+    static let flatMonster: UIImage = UIImage(named: "flatMonster") ?? UIImage()
+    static let moneyBag: UIImage = UIImage(named: "moneyBag") ?? UIImage()
+    static let regularMan: UIImage = UIImage(named: "regularMan") ?? UIImage()
+    static let scaredDude: UIImage = UIImage(named: "scaredDude") ?? UIImage()
+    static let strangeCat: UIImage = UIImage(named: "strangeCat") ?? UIImage()
 
-    
-
-    
 
 
 }
