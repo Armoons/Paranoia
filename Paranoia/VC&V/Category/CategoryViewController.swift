@@ -16,13 +16,13 @@ class CategoryViewController: UIViewController {
         self.view = categoryView
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         Game.shared.clearCategories()
         categoryView.updateUI()
         
-        print("---!! Category willAppear")
-
+        print("---!! Category didAppear")
     }
 
     override func viewDidLoad() {
@@ -36,7 +36,7 @@ class CategoryViewController: UIViewController {
         
         categoryView.completion = {
             self.navigationController?.show(self.gameVC, sender: self)
-            Game.shared.generateQuesions()
+            Game.shared.generateQuestions()
         }
     }
 }

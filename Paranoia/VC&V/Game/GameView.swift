@@ -9,7 +9,7 @@ import UIKit
 
 class GameView: UIView {
     
-    private var numberOfBackground = 0
+    private var numberOfBackgrounds = 0
     
     private let titleImage: UIImageView = {
         let iv = UIImageView()
@@ -84,10 +84,10 @@ class GameView: UIView {
         return iv
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        startBackground()
     }
     
     required init?(coder: NSCoder) {
@@ -98,7 +98,6 @@ class GameView: UIView {
         let questionText = Game.shared.getQuestion()
         self.questionLabel.text = questionText
     }
-
     
     @objc func startTapped(){
         questionBackground()
@@ -113,9 +112,8 @@ class GameView: UIView {
         
         let backgrounds = [background1, background2, background3, background4]
         
-        backgrounds[numberOfBackground].isHidden = false
+        backgrounds[numberOfBackgrounds].isHidden = false
 
-        
         for show in [questionLabel, nextOneButton] {
             show.isHidden = false
         }
@@ -129,13 +127,12 @@ class GameView: UIView {
         
         let backgrounds = [background1, background2, background3, background4]
         
-        backgrounds[numberOfBackground].isHidden = true
-        numberOfBackground =  (numberOfBackground + 1) % 4
+        backgrounds[numberOfBackgrounds].isHidden = true
+        numberOfBackgrounds =  (numberOfBackgrounds + 1) % 4
         
         for show in [baloonImage, pressImage, readyTapView] {
             show.isHidden = false
         }
-
         
         for hide in [backgroundView, nextOneButton, questionLabel] {
             hide.isHidden = true
@@ -182,8 +179,6 @@ class GameView: UIView {
         
         background4.snp.makeConstraints{
             $0.topMargin.equalToSuperview().inset(20)
-//            $0.width.equalTo(453)
-//            $0.height.equalTo(834)
             $0.leading.equalToSuperview()
         }
         

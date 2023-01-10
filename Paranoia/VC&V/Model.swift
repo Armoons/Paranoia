@@ -232,7 +232,7 @@ class Game {
     
     init() {}
 
-    func generateQuesions() {
+    func generateQuestions() {
         for category in categories {
             switch category {
             case .vulgar:

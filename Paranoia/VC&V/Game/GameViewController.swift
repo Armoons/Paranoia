@@ -10,7 +10,8 @@ import UIKit
 class GameViewController: UIViewController {
     
     let gameView = GameView()
-    
+    private var needStartUI = false
+
     override func loadView() {
         self.view = gameView
     }
@@ -23,7 +24,8 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        gameView.startBackground()
+        needStartUI ? gameView.startBackground() : nil
+        needStartUI = false
     }
 
     override func viewDidLoad() {
@@ -31,5 +33,11 @@ class GameViewController: UIViewController {
         print("---!! Game didLoad")
         
         navigationController?.navigationBar.topItem?.title = ""
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        needStartUI = true
     }
 }

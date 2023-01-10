@@ -182,14 +182,5 @@ class CategoryView: UIView {
             $0.width.equalTo(titleImage.snp.height).multipliedBy(188 / 94)
 
         }
-        //896 374
-        //414 96
-//        rexImage.snp.makeConstraints{
-//            $0.leading.equalToSuperview()
-//            $0.bottom.equalToSuperview()
-//            $0.topMargin.equalToSuperview().inset(heightOfView * 2/3)
-//            $0.width.equalTo(rexImage.snp.height).multipliedBy(96/374)
-//
-//        }
     }
 }

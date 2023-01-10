@@ -41,6 +41,7 @@
 		AE267EC12947F31200D1EFE4 /* RulesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesContentView.swift; sourceTree = "<group>"; };
 		AE2799CA2949E14800AEECC6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AE2799CC2949E15200AEECC6 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		AE29815E295F1BA200D340F9 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6517322943F24300385555 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		AE6517342943F2B800385555 /* UIView+Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext..swift"; sourceTree = "<group>"; };
 		AE6517372943F41D00385555 /* Enums&structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums&structs.swift"; sourceTree = "<group>"; };
@@ -200,6 +201,7 @@
 		DFA143D529E1D0019E5E63DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE29815E295F1BA200D340F9 /* SnapKit.framework */,
 				BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */,
 			);
 			name = Frameworks;
