@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class Game {
     
     static let shared = Game()
@@ -227,8 +226,6 @@ class Game {
         "Кто круче всех трахается?",
         "Кто может заняться сексом на первом свидании?"
     ]
-
-
     
     init() {}
 
@@ -245,7 +242,6 @@ class Game {
                 questions.append(contentsOf: niceQuestions)
             }
         }
-        
         print(questions)
     }
     
@@ -262,8 +258,13 @@ class Game {
         questions = []
     }
     
-    func getQuestion() -> String {
-        return questions.randomElement() ?? ""
+    func selectQuestion() -> String {
+        let question = questions.randomElement()
+        print("test111 ", questions.count)
+        questions.removeAll {$0 == question}
+        print("test222 ", questions.count)
+        questions.count == 0 ? self.generateQuestions() : nil
+        return question ?? ""
     }
     
     func selectCategory(_ category:Categories) {
@@ -277,5 +278,4 @@ class Game {
     func show() {
         print(categories)
     }
-    
 }

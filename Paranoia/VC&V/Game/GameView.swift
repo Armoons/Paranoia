@@ -95,7 +95,7 @@ class GameView: UIView {
     }
     
     func getQuestion() {
-        let questionText = Game.shared.getQuestion()
+        let questionText = Game.shared.selectQuestion()
         self.questionLabel.text = questionText
     }
     

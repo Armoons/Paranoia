@@ -28,7 +28,6 @@ class StartView: UIView {
         return b
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
