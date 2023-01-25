@@ -21,6 +21,5 @@ class RulesViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.backIndicatorImage = Images.backButtonCategory
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = Images.backButtonRules
-
     }
 }

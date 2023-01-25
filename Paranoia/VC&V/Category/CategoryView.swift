@@ -46,7 +46,7 @@ class CategoryView: UIView {
         stack.axis = .vertical
         stack.distribution = .equalSpacing
         stack.alignment = .center
-        stack.spacing = 40
+        stack.spacing = 30
         return stack
     }()
     
@@ -56,6 +56,16 @@ class CategoryView: UIView {
         b.translatesAutoresizingMaskIntoConstraints = false
         b.setImage(Images.nextArrow, for: .normal)
         return b
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.init(name: "Paranoia_font_by_LKA", size: 40)
+        label.textColor = .white
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.text = "Выберите \n категорию"
+        return label
     }()
     
     private let titleImage: UIImageView = {
@@ -83,7 +93,6 @@ class CategoryView: UIView {
         return iv
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -97,7 +106,6 @@ class CategoryView: UIView {
     
     @objc func nextTapped(sender: UIButton) {
         self.completion!()
-
     }
     
     func tappedButton(button: WhiteDefaultButton, category: Categories) {
@@ -154,7 +162,7 @@ class CategoryView: UIView {
         
         nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         
-        for ui in [categotyStackView, rexImage, happyImage, random1Image, nextButton, titleImage] {
+        for ui in [categotyStackView, rexImage, happyImage, random1Image, nextButton, titleLabel] {
             self.addSubview(ui)
         }
         
@@ -173,14 +181,11 @@ class CategoryView: UIView {
         nextButton.snp.makeConstraints{
             $0.centerX.equalToSuperview()
             $0.top.equalTo(categotyStackView.snp.bottom).offset(40)
-            
         }
         
-        titleImage.snp.makeConstraints{
+        titleLabel.snp.makeConstraints{
             $0.centerX.equalToSuperview()
             $0.topMargin.equalToSuperview().offset(10)
-            $0.width.equalTo(titleImage.snp.height).multipliedBy(188 / 94)
-
         }
     }
 }

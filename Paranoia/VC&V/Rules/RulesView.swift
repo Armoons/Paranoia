@@ -26,7 +26,6 @@ class RulesView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
         
@@ -42,8 +41,5 @@ class RulesView: UIView {
         contentView.snp.makeConstraints{
             $0.width.top.bottom.centerX.equalToSuperview()
         }
-        
-
-
     }
 }

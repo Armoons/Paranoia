@@ -260,9 +260,7 @@ class Game {
     
     func selectQuestion() -> String {
         let question = questions.randomElement()
-        print("test111 ", questions.count)
         questions.removeAll {$0 == question}
-        print("test222 ", questions.count)
         questions.count == 0 ? self.generateQuestions() : nil
         return question ?? ""
     }

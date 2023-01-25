@@ -26,8 +26,7 @@ class RulesContentView: UIView {
         let label = UILabel()
         label.attributedText = NSMutableAttributedString()
 //            .bold("Паранойя - ")
-            .normal("Паранойя - игра, благодарая которой Вы можете узнать все грязные мыслишки своих друзей")
-//            .bold("грязные мыслишки ")
+            .normal("Паранойя - игра, благодарая которой Вы можете узнать все мыслишки своих друзей")
 //            .normal("своих друзей")
 
         label.textColor = .white
@@ -39,7 +38,6 @@ class RulesContentView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.translatesAutoresizingMaskIntoConstraints = false
-
         
         setupUI()
     }
@@ -47,7 +45,6 @@ class RulesContentView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     func setupUI() {
         
@@ -59,8 +56,7 @@ class RulesContentView: UIView {
             $0.centerX.equalToSuperview()
             $0.top.equalToSuperview().inset(10)
             $0.height.equalTo(69)
-            $0.width.equalTo(titleImage.snp.height).multipliedBy(217 / 69)
-
+            $0.width.equalTo(217)
         }
         
         firstLabel.snp.makeConstraints{
@@ -73,8 +69,7 @@ class RulesContentView: UIView {
             $0.top.equalTo(firstLabel.snp.bottom).offset(15)
             $0.centerX.equalToSuperview()
             $0.height.equalTo(88)
-            $0.width.equalTo(eyeImage.snp.height).multipliedBy(213 / 88)
-
+            $0.width.equalTo(213)
         }
     }
 }
