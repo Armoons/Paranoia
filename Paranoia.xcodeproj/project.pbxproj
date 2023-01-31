@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */; };
+		AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */; };
+		AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */; };
+		AE0041E129894D9E0007516B /* RulesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0041DF29894D9E0007516B /* RulesCollectionViewCell.xib */; };
 		AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBA2947D71700D1EFE4 /* Model.swift */; };
 		AE267EBD2947EAEE00D1EFE4 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */; };
 		AE267EBF2947EAF800D1EFE4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBE2947EAF800D1EFE4 /* RulesView.swift */; };
-		AE267EC22947F31200D1EFE4 /* RulesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EC12947F31200D1EFE4 /* RulesContentView.swift */; };
 		AE2799CB2949E14800AEECC6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2799CA2949E14800AEECC6 /* GameViewController.swift */; };
 		AE2799CD2949E15200AEECC6 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2799CC2949E15200AEECC6 /* GameView.swift */; };
 		AE6517332943F24300385555 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6517322943F24300385555 /* StartView.swift */; };
@@ -34,10 +36,12 @@
 
 /* Begin PBXFileReference section */
 		3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.debug.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesOnboardingModel.swift; sourceTree = "<group>"; };
+		AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE0041DF29894D9E0007516B /* RulesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE267EBA2947D71700D1EFE4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		AE267EBE2947EAF800D1EFE4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
-		AE267EC12947F31200D1EFE4 /* RulesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesContentView.swift; sourceTree = "<group>"; };
 		AE2799CA2949E14800AEECC6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AE2799CC2949E15200AEECC6 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		AE29815E295F1BA200D340F9 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0041E3298953E30007516B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */,
+				AE0041DF29894D9E0007516B /* RulesCollectionViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		AE267EC02947EAFE00D1EFE4 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +102,8 @@
 			children = (
 				AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */,
 				AE267EBE2947EAF800D1EFE4 /* RulesView.swift */,
-				AE267EC12947F31200D1EFE4 /* RulesContentView.swift */,
+				AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */,
+				AE0041E3298953E30007516B /* Cell */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -277,6 +291,7 @@
 				AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */,
 				AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */,
 				AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */,
+				AE0041E129894D9E0007516B /* RulesCollectionViewCell.xib in Resources */,
 				AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */,
 				AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */,
 			);
@@ -335,8 +350,9 @@
 				AE65173A2943FB1900385555 /* WhiteDefaultButton.swift in Sources */,
 				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
 				AE6517332943F24300385555 /* StartView.swift in Sources */,
+				AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */,
+				AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */,
 				AE2799CD2949E15200AEECC6 /* GameView.swift in Sources */,
-				AE267EC22947F31200D1EFE4 /* RulesContentView.swift in Sources */,
 				AE8462F429452FD1002E8E5F /* CategoryViewController.swift in Sources */,
 				AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */,
 				AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */,

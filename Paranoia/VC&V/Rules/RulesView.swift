@@ -9,12 +9,27 @@ import UIKit
 
 class RulesView: UIView {
     
-    private let contentView = RulesContentView()
-    
-    private let scrollView: UIScrollView = {
-        let sv = UIScrollView()
-        return sv
+    private let pageControl: UIPageControl = {
+       let pc = UIPageControl()
+        
+        return pc
     }()
+    
+    private var slides: [RulesOnboardingModel] = []
+    
+    private let contentView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        cv.showsVerticalScrollIndicator = false
+        cv.showsHorizontalScrollIndicator = false
+        cv.isPagingEnabled = true
+        cv.bounces = false
+        return cv
+    }()
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,18 +43,7 @@ class RulesView: UIView {
     
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
-        
-        for ui in [scrollView] {
-            self.addSubview(ui)
-        }
-        scrollView.snp.makeConstraints{
-            $0.edges.equalTo(safeAreaLayoutGuide)
-        }
-        
-        scrollView.addSubview(contentView)
-        
-        contentView.snp.makeConstraints{
-            $0.width.top.bottom.centerX.equalToSuperview()
-        }
     }
+    
+    
 }
