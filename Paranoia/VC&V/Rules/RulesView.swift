@@ -9,13 +9,22 @@ import UIKit
 
 class RulesView: UIView {
     
+    var getPagesCount: (() -> (Int))?
+    
+    var getPageForIndex: ((Int) -> RulesOnboardingModel?)?
+    
+    
+    func reload() {
+        contentView.reloadData()
+    }
+        
     private let pageControl: UIPageControl = {
-       let pc = UIPageControl()
+        let pc = UIPageControl()
         
         return pc
     }()
     
-    private var slides: [RulesOnboardingModel] = []
+//    private var slides: [RulesOnboardingModel] = []
     
     private let contentView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -26,6 +35,8 @@ class RulesView: UIView {
         cv.showsVerticalScrollIndicator = false
         cv.showsHorizontalScrollIndicator = false
         cv.isPagingEnabled = true
+        cv.backgroundColor = Colors.backgroundColor
+        cv.register(RulesCollectionViewCell.self, forCellWithReuseIdentifier: RulesCollectionViewCell.identifier)
         cv.bounces = false
         return cv
     }()
@@ -43,7 +54,33 @@ class RulesView: UIView {
     
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
+    
+        self.addSubview(contentView)
+        contentView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+        contentView.delegate = self
+        contentView.dataSource = self
+    }
+}
+
+extension RulesView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        getPagesCount?() ?? 0
     }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let model = getPageForIndex?(indexPath.row) else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RulesCollectionViewCell.identifier, for: indexPath) as? RulesCollectionViewCell else { return UICollectionViewCell() }
+            
+        cell.setup(model)
+        
+        return cell
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.frame.width, height: self.frame.height * 2/3)
+    }
 }

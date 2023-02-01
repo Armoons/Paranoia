@@ -52,6 +52,12 @@ struct Images {
     static let regularMan: UIImage = UIImage(named: "regularMan") ?? UIImage()
     static let scaredDude: UIImage = UIImage(named: "scaredDude") ?? UIImage()
     static let strangeCat: UIImage = UIImage(named: "strangeCat") ?? UIImage()
+    static let slideOne: UIImage = UIImage(named: "slideOne_image") ?? UIImage()
+    static let slideTwo: UIImage = UIImage(named: "slideTwo_image") ?? UIImage()
+    static let slideThree: UIImage = UIImage(named: "slideThree_image") ?? UIImage()
+    static let slideFour: UIImage = UIImage(named: "slideFour_image") ?? UIImage()
+
+    
 
 
 

@@ -10,8 +10,8 @@ import UIKit
 
 struct RulesOnboardingModel {
     
-    let fLabel: String
-    let sLabel: String
-    let mImage: UIImage
-    let backImage: UIImage
+//    let fLabel: String
+//    let sLabel: String
+//    let mImage: UIImage
+    let image: UIImage
 }

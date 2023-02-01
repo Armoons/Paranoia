@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */; };
+		4703CA1D23F076D8A222BAD3 /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */; };
 		AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */; };
 		AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */; };
-		AE0041E129894D9E0007516B /* RulesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0041DF29894D9E0007516B /* RulesCollectionViewCell.xib */; };
 		AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBA2947D71700D1EFE4 /* Model.swift */; };
 		AE267EBD2947EAEE00D1EFE4 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */; };
 		AE267EBF2947EAF800D1EFE4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBE2947EAF800D1EFE4 /* RulesView.swift */; };
@@ -35,10 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.debug.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.debug.xcconfig"; sourceTree = "<group>"; };
+		02DAA78BC06FD98532FF1FAC /* Pods-Paranoia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.debug.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.debug.xcconfig"; sourceTree = "<group>"; };
+		147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesOnboardingModel.swift; sourceTree = "<group>"; };
 		AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesCollectionViewCell.swift; sourceTree = "<group>"; };
-		AE0041DF29894D9E0007516B /* RulesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE267EBA2947D71700D1EFE4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		AE267EBE2947EAF800D1EFE4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
@@ -63,8 +62,7 @@
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED3D410295E3E030060B212 /* paranoia font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "paranoia font.ttf"; sourceTree = "<group>"; };
-		B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
-		BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EF8EFEAC1A7AED33E2E95A /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0231DA51759ABCBAB30574DC /* Pods_Paranoia.framework in Frameworks */,
+				4703CA1D23F076D8A222BAD3 /* Pods_Paranoia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */,
-				AE0041DF29894D9E0007516B /* RulesCollectionViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -213,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				AE29815E295F1BA200D340F9 /* SnapKit.framework */,
-				BF40E4DA93E414E711DEE16D /* Pods_Paranoia.framework */,
+				147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,8 +218,8 @@
 		E8D987E99F17732EDF1FF5A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */,
-				B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */,
+				02DAA78BC06FD98532FF1FAC /* Pods-Paranoia.debug.xcconfig */,
+				C3EF8EFEAC1A7AED33E2E95A /* Pods-Paranoia.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -234,11 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBE19E6293F79CD00983812 /* Build configuration list for PBXNativeTarget "Paranoia" */;
 			buildPhases = (
-				2FE1112D02BA7A2DCEEBBC4F /* [CP] Check Pods Manifest.lock */,
+				F106C318618ECFF43C8A49DA /* [CP] Check Pods Manifest.lock */,
 				AEBE19CE293F79CC00983812 /* Sources */,
 				AEBE19CF293F79CC00983812 /* Frameworks */,
 				AEBE19D0293F79CC00983812 /* Resources */,
-				1AF6452D13DA1B8C3558E78C /* [CP] Embed Pods Frameworks */,
+				4380EAF27C8A709C1D99920B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +288,6 @@
 				AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */,
 				AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */,
 				AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */,
-				AE0041E129894D9E0007516B /* RulesCollectionViewCell.xib in Resources */,
 				AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */,
 				AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */,
 			);
@@ -300,7 +296,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AF6452D13DA1B8C3558E78C /* [CP] Embed Pods Frameworks */ = {
+		4380EAF27C8A709C1D99920B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,7 +313,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Paranoia/Pods-Paranoia-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2FE1112D02BA7A2DCEEBBC4F /* [CP] Check Pods Manifest.lock */ = {
+		F106C318618ECFF43C8A49DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,7 +500,7 @@
 		};
 		AEBE19E7293F79CD00983812 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEE3CFC31437D11CB792770 /* Pods-Paranoia.debug.xcconfig */;
+			baseConfigurationReference = 02DAA78BC06FD98532FF1FAC /* Pods-Paranoia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -533,7 +529,7 @@
 		};
 		AEBE19E8293F79CD00983812 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B90C0E61178358B8ADF44B67 /* Pods-Paranoia.release.xcconfig */;
+			baseConfigurationReference = C3EF8EFEAC1A7AED33E2E95A /* Pods-Paranoia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

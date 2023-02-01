@@ -6,26 +6,40 @@
 //
 
 import UIKit
+import SnapKit
 
 class RulesCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "RulesCollectionViewCell"
+    private var imageV = UIImageView()
     
-    @IBOutlet weak var topLabel: UILabel!
-    @IBOutlet weak var middleImage: UIImageView!
-    @IBOutlet weak var bottomLabel: UILabel!
-    @IBOutlet weak var backgroundImage: UIImageView!
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupUI()
+    }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupUI() {
+        self.addSubview(imageV)
+        
+        imageV.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview().inset(10)
+            $0.top.equalToSuperview()
+            
+        }
     }
     
     func setup(_ slide: RulesOnboardingModel) {
-        topLabel.text = slide.fLabel
-        bottomLabel.text = slide.sLabel
-        middleImage.image = slide.mImage
-        backgroundImage.image = slide.backImage
+        self.imageV.image = slide.image
+        
+//        topLabel.text = slide.fLabel
+//        bottomLabel.text = slide.sLabel
+//        middleImage.image = slide.mImage
+//        backgroundImage.image = slide.backImage
     }
 
 }
