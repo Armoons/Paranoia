@@ -12,11 +12,6 @@ class RulesView: UIView {
     var getPagesCount: (() -> (Int))?
     
     var getPageForIndex: ((Int) -> RulesOnboardingModel?)?
-    
-    
-    func reload() {
-        contentView.reloadData()
-    }
         
     private let pageControl: UIPageControl = {
         let pc = UIPageControl()
@@ -26,7 +21,7 @@ class RulesView: UIView {
     
 //    private var slides: [RulesOnboardingModel] = []
     
-    private let contentView: UICollectionView = {
+    private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         layout.scrollDirection = .horizontal
@@ -52,16 +47,25 @@ class RulesView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupUI() {
+    private func setupUI() {
         self.backgroundColor = Colors.backgroundColor
     
-        self.addSubview(contentView)
-        contentView.snp.makeConstraints {
+        self.addSubview(collectionView)
+        collectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
         
-        contentView.delegate = self
-        contentView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    func reload() {
+        collectionView.reloadData()
+    }
+    
+    func scrollTo(_ page: Int) {
+        let indexPath = IndexPath(item: page, section: 0)
+        self.collectionView.scrollToItem(at: indexPath, at: [.bottom], animated: false)
     }
 }
 

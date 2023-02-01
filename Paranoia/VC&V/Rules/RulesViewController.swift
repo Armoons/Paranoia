@@ -16,6 +16,13 @@ class RulesViewController: UIViewController {
     override func loadView() {
         self.view = rulesView
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        rulesView.scrollTo(0)
+
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

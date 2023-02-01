@@ -22,6 +22,7 @@
 		AE8462F429452FD1002E8E5F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8462F329452FD1002E8E5F /* CategoryViewController.swift */; };
 		AE8462F629452FEA002E8E5F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8462F529452FEA002E8E5F /* CategoryView.swift */; };
 		AE8462F829453011002E8E5F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8462F729453011002E8E5F /* StartViewController.swift */; };
+		AE8DEE9C298B27110070CF97 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DEE9B298B27110070CF97 /* Music.swift */; };
 		AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE90009229509E7500970C0E /* Gilroy-Regular.ttf */; };
 		AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE90009429509E8600970C0E /* Gilroy-Bold.ttf */; };
 		AE9000972950A22D00970C0E /* NSMutableAttributedString+Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9000962950A22D00970C0E /* NSMutableAttributedString+Ext..swift */; };
@@ -51,6 +52,7 @@
 		AE8462F329452FD1002E8E5F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		AE8462F529452FEA002E8E5F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		AE8462F729453011002E8E5F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		AE8DEE9B298B27110070CF97 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		AE90009229509E7500970C0E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		AE90009429509E8600970C0E /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		AE9000962950A22D00970C0E /* NSMutableAttributedString+Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Ext..swift"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				AE2799C92949E12100AEECC6 /* Rules */,
 				AE267EBA2947D71700D1EFE4 /* Model.swift */,
 				AE90008D294DD39200970C0E /* Game */,
+				AE8DEE9B298B27110070CF97 /* Music.swift */,
 			);
 			path = "VC&V";
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
 				AE6517332943F24300385555 /* StartView.swift in Sources */,
 				AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */,
+				AE8DEE9C298B27110070CF97 /* Music.swift in Sources */,
 				AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */,
 				AE2799CD2949E15200AEECC6 /* GameView.swift in Sources */,
 				AE8462F429452FD1002E8E5F /* CategoryViewController.swift in Sources */,
