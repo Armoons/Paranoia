@@ -32,6 +32,9 @@
 		AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DE293F79CD00983812 /* Assets.xcassets */; };
 		AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */; };
 		AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED3D410295E3E030060B212 /* paranoia font.ttf */; };
+		AEFD53A2298C6AF5001F739E /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEFD53A0298C6AF5001F739E /* Music.mp3 */; };
+		AEFD53A3298C6AF5001F739E /* TapSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEFD53A1298C6AF5001F739E /* TapSound.mp3 */; };
+		AEFD53A5298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEFD53A4298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED3D410295E3E030060B212 /* paranoia font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "paranoia font.ttf"; sourceTree = "<group>"; };
+		AEFD53A0298C6AF5001F739E /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music.mp3; sourceTree = "<group>"; };
+		AEFD53A1298C6AF5001F739E /* TapSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TapSound.mp3; sourceTree = "<group>"; };
+		AEFD53A4298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avetis Berberyan, Loneliness.mp3"; sourceTree = "<group>"; };
 		C3EF8EFEAC1A7AED33E2E95A /* Pods-Paranoia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paranoia.release.xcconfig"; path = "Target Support Files/Pods-Paranoia/Pods-Paranoia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +203,9 @@
 		AEBE19D4293F79CC00983812 /* Paranoia */ = {
 			isa = PBXGroup;
 			children = (
+				AEFD53A0298C6AF5001F739E /* Music.mp3 */,
+				AEFD53A4298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 */,
+				AEFD53A1298C6AF5001F739E /* TapSound.mp3 */,
 				AE65173F2943FF5100385555 /* XcodeFiles */,
 				AE65173D2943FF2C00385555 /* VC&V */,
 				AE65173B2943FF0900385555 /* Resources */,
@@ -287,8 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFD53A3298C6AF5001F739E /* TapSound.mp3 in Resources */,
 				AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */,
+				AEFD53A2298C6AF5001F739E /* Music.mp3 in Resources */,
 				AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */,
+				AEFD53A5298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 in Resources */,
 				AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */,
 				AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */,
 				AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */,

@@ -16,11 +16,32 @@ class StartViewController: UIViewController {
     override func loadView() {
         self.view = startView
     }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+        } else {
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            Music.shared.music(.play)
+        }
+        
+        UserDefaults.standard.bool(forKey: "Music") ? Music.shared.music(.play) : nil
+        
         
         setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        startView.hideSettings()
     }
     
     func setupUI() {

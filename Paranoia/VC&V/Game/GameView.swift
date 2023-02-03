@@ -100,11 +100,13 @@ class GameView: UIView {
     }
     
     @objc func startTapped(){
+        Music.shared.tapSound()
         questionBackground()
         getQuestion()
     }
     
     @objc func nextQuestionTapped(){
+        Music.shared.tapSound()
         startBackground()
     }
     

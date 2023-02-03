@@ -13,6 +13,11 @@ enum PageType {
     case categoryPage
 }
 
+enum MysicState {
+    case play
+    case stop
+}
+
 enum Categories {
     case nice
     case nasty
@@ -56,8 +61,13 @@ struct Images {
     static let slideTwo: UIImage = UIImage(named: "slideTwo_image") ?? UIImage()
     static let slideThree: UIImage = UIImage(named: "slideThree_image") ?? UIImage()
     static let slideFour: UIImage = UIImage(named: "slideFour_image") ?? UIImage()
+    static let settings: UIImage = UIImage(named: "settings_image") ?? UIImage()
+    static let musicPanel: UIImage = UIImage(named: "musicPanel_image") ?? UIImage()
+    static let musicOff: UIImage = UIImage(named: "musicOff_image") ?? UIImage()
+    static let musicOn: UIImage = UIImage(named: "musicOn_image") ?? UIImage()
+    static let soundOff: UIImage = UIImage(named: "soundOff_image") ?? UIImage()
+    static let soundOn: UIImage = UIImage(named: "soundOn_image") ?? UIImage()
 
-    
 
 
 

@@ -105,6 +105,7 @@ class CategoryView: UIView {
     
     
     @objc func nextTapped(sender: UIButton) {
+        Music.shared.tapSound()
         self.completion!()
     }
     
@@ -122,18 +123,21 @@ class CategoryView: UIView {
     }
     
     @objc func niceTapped(sender: UIButton) {
+        Music.shared.tapSound()
         self.tappedButton(button: niceButton, category: .nice)
         nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
     }
     
     @objc func nastyTapped(sender: UIButton) {
+        Music.shared.tapSound()
         self.tappedButton(button: nastyButton, category: .nasty)
         nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
     }
     
     @objc func intesersingTapped(sender: UIButton) {
+        Music.shared.tapSound()
         self.tappedButton(button: interestingButton, category: .interesting)
         nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
@@ -141,6 +145,7 @@ class CategoryView: UIView {
     }
     
     @objc func vulgarTapped(sender: UIButton) {
+        Music.shared.tapSound()
         self.tappedButton(button: vulgarButton, category: .vulgar)
         nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         Game.shared.show()
