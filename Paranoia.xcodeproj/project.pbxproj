@@ -10,6 +10,7 @@
 		4703CA1D23F076D8A222BAD3 /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */; };
 		AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */; };
 		AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */; };
+		AE0C564829B7AC52007E05D7 /* RulesBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C564729B7AC52007E05D7 /* RulesBackgroundView.swift */; };
 		AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBA2947D71700D1EFE4 /* Model.swift */; };
 		AE267EBD2947EAEE00D1EFE4 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */; };
 		AE267EBF2947EAF800D1EFE4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBE2947EAF800D1EFE4 /* RulesView.swift */; };
@@ -42,6 +43,7 @@
 		147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesOnboardingModel.swift; sourceTree = "<group>"; };
 		AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE0C564729B7AC52007E05D7 /* RulesBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesBackgroundView.swift; sourceTree = "<group>"; };
 		AE267EBA2947D71700D1EFE4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		AE267EBE2947EAF800D1EFE4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */,
 				AE267EBE2947EAF800D1EFE4 /* RulesView.swift */,
 				AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */,
+				AE0C564729B7AC52007E05D7 /* RulesBackgroundView.swift */,
 				AE0041E3298953E30007516B /* Cell */,
 			);
 			path = Rules;
@@ -361,6 +364,7 @@
 				AE65173A2943FB1900385555 /* WhiteDefaultButton.swift in Sources */,
 				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
 				AE6517332943F24300385555 /* StartView.swift in Sources */,
+				AE0C564829B7AC52007E05D7 /* RulesBackgroundView.swift in Sources */,
 				AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */,
 				AE8DEE9C298B27110070CF97 /* Music.swift in Sources */,
 				AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */,

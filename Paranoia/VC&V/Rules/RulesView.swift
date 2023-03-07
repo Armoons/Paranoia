@@ -15,7 +15,6 @@ class RulesView: UIView {
         
     private let pageControl: UIPageControl = {
         let pc = UIPageControl()
-        
         return pc
     }()
     
@@ -35,8 +34,6 @@ class RulesView: UIView {
         cv.bounces = false
         return cv
     }()
-    
-
     override init(frame: CGRect) {
         super.init(frame: frame)
                 
@@ -49,6 +46,7 @@ class RulesView: UIView {
     
     private func setupUI() {
         self.backgroundColor = Colors.backgroundColor
+        
     
         self.addSubview(collectionView)
         collectionView.snp.makeConstraints {
@@ -57,6 +55,7 @@ class RulesView: UIView {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+
     }
     
     func reload() {
@@ -78,13 +77,15 @@ extension RulesView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let model = getPageForIndex?(indexPath.row) else { return UICollectionViewCell() }
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RulesCollectionViewCell.identifier, for: indexPath) as? RulesCollectionViewCell else { return UICollectionViewCell() }
-            
         cell.setup(model)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        print("WWW", self.frame.width)
+        print("hhh", self.frame.height)
+
         return CGSize(width: self.frame.width, height: self.frame.height * 2/3)
     }
 }

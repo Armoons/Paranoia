@@ -67,9 +67,10 @@ struct Images {
     static let musicOn: UIImage = UIImage(named: "musicOn_image") ?? UIImage()
     static let soundOff: UIImage = UIImage(named: "soundOff_image") ?? UIImage()
     static let soundOn: UIImage = UIImage(named: "soundOn_image") ?? UIImage()
+    static let rulesBackground: UIImage = UIImage(named: "rulesBackground_image") ?? UIImage()
 
 
 
-
+    
 }
 

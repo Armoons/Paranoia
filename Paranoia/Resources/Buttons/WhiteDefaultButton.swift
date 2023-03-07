@@ -23,6 +23,10 @@ class WhiteDefaultButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+//    convenience init(type: ButtonType) {
+//        self.buttonType = type
+//    }
+    
     private func setupUI(){
         self.layer.cornerRadius = 30
         self.backgroundColor = .white

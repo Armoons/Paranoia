@@ -29,12 +29,12 @@ class RulesCollectionViewCell: UICollectionViewCell {
         imageV.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(10)
             $0.top.equalToSuperview()
-            
         }
     }
     
     func setup(_ slide: RulesOnboardingModel) {
         self.imageV.image = slide.image
+        self.backgroundView = RulesBackgroundView()
         
 //        topLabel.text = slide.fLabel
 //        bottomLabel.text = slide.sLabel
