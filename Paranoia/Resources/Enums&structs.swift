@@ -13,9 +13,19 @@ enum PageType {
     case categoryPage
 }
 
-enum MysicState {
+enum iconReverse {
+    case yes
+    case no
+}
+
+enum MusicState {
     case play
     case stop
+}
+
+enum SoundState {
+    case on
+    case off
 }
 
 enum Categories {

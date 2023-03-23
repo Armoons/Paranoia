@@ -30,10 +30,10 @@ class StartViewController: UIViewController {
             print("First launch, setting UserDefault.")
             UserDefaults.standard.set(true, forKey: "launchedBefore")
             Music.shared.music(.play)
+            Music.shared.sound(.on)
         }
         
-        UserDefaults.standard.bool(forKey: "Music") ? Music.shared.music(.play) : nil
-        
+        Music.shared.isMusicActive() ? Music.shared.music(.play) : nil
         
         setupUI()
     }
@@ -47,7 +47,15 @@ class StartViewController: UIViewController {
     func setupUI() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
-        startView.completion = { type in
+        startView.musicButtonTapped = {
+            Music.shared.isMusicActive() ? Music.shared.music(.stop) : Music.shared.music(.play)
+        }
+        
+        startView.soundButtonTapped = {
+            Music.shared.isSoundActive() ? Music.shared.sound(.off) : Music.shared.sound(.on)
+        }
+        
+        startView.mainButtonTapped = { type in
             switch type {
             case .startButton:
                 self.navigationController?.show(self.categoryVC, sender: self)

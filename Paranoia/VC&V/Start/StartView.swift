@@ -10,7 +10,9 @@ import SnapKit
 
 class StartView: UIView {
     
-    var completion: ((startViewButtons)->())?
+    var mainButtonTapped: ((startViewButtons)->())?
+    var musicButtonTapped: (() -> ())?
+    var soundButtonTapped: (() -> ())?
     
     private let titleImage: UIImageView = {
         let iv = UIImageView()
@@ -69,33 +71,34 @@ class StartView: UIView {
         setupUI()
     }
     
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     @objc func startTapped(sender: UIButton) {
         Music.shared.tapSound()
-        completion!(startViewButtons.startButton)
+        mainButtonTapped!(startViewButtons.startButton)
     }
     
     @objc func rulesTapped(sender: UIButton) {
         Music.shared.tapSound()
-        completion!(startViewButtons.rulesButton)
-    }
-    
-    
-    @objc func soundTapped() {
-        
+        mainButtonTapped!(startViewButtons.rulesButton)
     }
     
     @objc func musicTapped() {
-
+        print("musicTapped")
+        updateMusicIcon(.yes)
+        musicButtonTapped!()
+    }
+    
+    @objc func soundTapped() {
+        print("soundTapped")
+        updateSoundIcon(.yes)
+        soundButtonTapped!()
     }
     
     @objc func settingsTapped() {
         Music.shared.tapSound()
-
         
         UIView.animate(withDuration: 0.5, delay: 0) {
             for ui in [self.musicPanelIV, self.soundIV, self.musicIV, self.musicLabel, self.soundLabel] {
@@ -110,8 +113,46 @@ class StartView: UIView {
         }
     }
     
+    func updateMusicIcon(_ reverse: iconReverse) {
+        switch reverse {
+        case .yes:
+            if Music.shared.isMusicActive(){
+                musicIV.image = Images.musicOff
+            } else {
+                musicIV.image = Images.musicOn
+            }
+        case .no:
+            if !Music.shared.isMusicActive(){
+                musicIV.image = Images.musicOff
+            } else {
+                musicIV.image = Images.musicOn
+            }
+        }
+        
+    }
+    
+    func updateSoundIcon(_ reverse: iconReverse) {
+        switch reverse {
+        case .yes:
+            if Music.shared.isSoundActive(){
+                soundIV.image = Images.soundOff
+            } else {
+                soundIV.image = Images.soundOn
+            }
+        case .no:
+            if !Music.shared.isSoundActive(){
+                soundIV.image = Images.soundOff
+            } else {
+                soundIV.image = Images.soundOn
+            }
+        }
+    }
     
     private func setupUI() {
+        
+        updateSoundIcon(.no)
+        updateMusicIcon(.no)
+      
         
         startButton.addTarget(self, action: #selector(startTapped), for: .touchUpInside)
         rulesButton.addTarget(self, action: #selector(rulesTapped), for: .touchUpInside)
@@ -128,14 +169,8 @@ class StartView: UIView {
         musicIV.isUserInteractionEnabled = true
         musicIV.addGestureRecognizer(musicGestureRecognizer)
         
-        
-        
-        musicIV.image = Images.musicOn
-        soundIV.image = Images.soundOn
-        
         self.backgroundColor = Colors.backgroundColor
         self.addBackground(page: .startPage)
-        
         
         for view in [titleImage, startButton, rulesButton, settingsIV, musicPanelIV, soundIV, musicIV, musicLabel, soundLabel] {
             self.addSubview(view)
@@ -180,22 +215,18 @@ class StartView: UIView {
         }
         
         soundIV.snp.makeConstraints{
-            $0.left.equalTo(musicLabel.snp.right).inset(-6)
-            $0.centerY.equalTo(musicPanelIV)
-        }
-        
-        musicIV.snp.makeConstraints{
             $0.right.equalTo(musicPanelIV.snp.right).inset(14)
             $0.centerY.equalTo(musicPanelIV)
         }
         
-        soundLabel.snp.makeConstraints{
-            $0.right.equalTo(musicIV.snp.left).inset(-6)
+        musicIV.snp.makeConstraints{
+            $0.left.equalTo(musicLabel.snp.right).inset(-6)
             $0.centerY.equalTo(musicPanelIV)
         }
-       
         
-        
-        
+        soundLabel.snp.makeConstraints{
+            $0.right.equalTo(soundIV.snp.left).inset(-6)
+            $0.centerY.equalTo(musicPanelIV)
+        }
     }
 }
