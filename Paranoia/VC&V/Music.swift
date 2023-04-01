@@ -44,7 +44,7 @@ class Music {
     
     func music(_ state: MusicState) {
         
-        if let bundle = Bundle.main.path(forResource: "Avetis Berberyan, Loneliness", ofType: "mp3") {
+        if let bundle = Bundle.main.path(forResource: "Music", ofType: "mp3") {
             let backgroundMusic = NSURL(fileURLWithPath: bundle)
             do {
                 audioPlayerMusic = try AVAudioPlayer(contentsOf:backgroundMusic as URL)
