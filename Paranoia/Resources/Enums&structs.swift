@@ -60,13 +60,13 @@ struct Images {
     static let stranger: UIImage = UIImage(named: "stranger_image") ?? UIImage()
     static let strangerHalf: UIImage = UIImage(named: "strangerHalf_image") ?? UIImage()
     static let eye: UIImage = UIImage(named: "eye_image") ?? UIImage()
-    static let bigPig: UIImage = UIImage(named: "bigPig") ?? UIImage()
-    static let coolCrocodile: UIImage = UIImage(named: "coolCrocodile") ?? UIImage()
-    static let flatMonster: UIImage = UIImage(named: "flatMonster") ?? UIImage()
-    static let moneyBag: UIImage = UIImage(named: "moneyBag") ?? UIImage()
-    static let regularMan: UIImage = UIImage(named: "regularMan") ?? UIImage()
-    static let scaredDude: UIImage = UIImage(named: "scaredDude") ?? UIImage()
-    static let strangeCat: UIImage = UIImage(named: "strangeCat") ?? UIImage()
+    static let bigPig: UIImage = UIImage(named: "bigPig_image") ?? UIImage()
+    static let coolCrocodile: UIImage = UIImage(named: "coolCrocodile_image") ?? UIImage()
+    static let flatMonster: UIImage = UIImage(named: "flatMonster_image") ?? UIImage()
+    static let moneyBag: UIImage = UIImage(named: "moneyBag_image") ?? UIImage()
+    static let regularMan: UIImage = UIImage(named: "regularMan_image") ?? UIImage()
+    static let scaredDude: UIImage = UIImage(named: "scaredDude_image") ?? UIImage()
+    static let strangeCat: UIImage = UIImage(named: "strangeCat_image") ?? UIImage()
     static let slideOne: UIImage = UIImage(named: "slideOne_image") ?? UIImage()
     static let slideTwo: UIImage = UIImage(named: "slideTwo_image") ?? UIImage()
     static let slideThree: UIImage = UIImage(named: "slideThree_image") ?? UIImage()
@@ -77,7 +77,13 @@ struct Images {
     static let musicOn: UIImage = UIImage(named: "musicOn_image") ?? UIImage()
     static let soundOff: UIImage = UIImage(named: "soundOff_image") ?? UIImage()
     static let soundOn: UIImage = UIImage(named: "soundOn_image") ?? UIImage()
-    static let rulesBackground: UIImage = UIImage(named: "rulesBackground_image") ?? UIImage()
+    static let russianP: UIImage = UIImage(named: "russianPLetterDude_image") ?? UIImage()
+    static let startBackground: UIImage = UIImage(named: "startBackground_image") ?? UIImage()
+    
+    
+    
+
+    
 
 
 

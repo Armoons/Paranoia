@@ -143,6 +143,7 @@ class GameView: UIView {
     
     func setupUI() {
         self.backgroundColor = Colors.backgroundColor
+        self.clipsToBounds = true
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(startTapped))
         readyTapView.addGestureRecognizer(tapGestureRecognizer)
@@ -170,6 +171,11 @@ class GameView: UIView {
             $0.top.equalTo(titleImage.snp.bottom).inset(20)
         }
         
+        background4.snp.makeConstraints{
+            $0.topMargin.equalToSuperview().inset(20)
+            $0.leading.equalToSuperview()
+        }
+        
         readyTapView.snp.makeConstraints{
             $0.edges.equalToSuperview()
             $0.width.equalToSuperview()
@@ -177,11 +183,6 @@ class GameView: UIView {
         
         backgroundView.snp.makeConstraints{
             $0.edges.equalToSuperview()
-        }
-        
-        background4.snp.makeConstraints{
-            $0.topMargin.equalToSuperview().inset(20)
-            $0.leading.equalToSuperview()
         }
         
         titleImage.snp.makeConstraints{

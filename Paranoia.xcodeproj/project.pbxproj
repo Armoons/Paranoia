@@ -10,7 +10,6 @@
 		4703CA1D23F076D8A222BAD3 /* Pods_Paranoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */; };
 		AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */; };
 		AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */; };
-		AE0C564829B7AC52007E05D7 /* RulesBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C564729B7AC52007E05D7 /* RulesBackgroundView.swift */; };
 		AE267EBB2947D71700D1EFE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBA2947D71700D1EFE4 /* Model.swift */; };
 		AE267EBD2947EAEE00D1EFE4 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */; };
 		AE267EBF2947EAF800D1EFE4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE267EBE2947EAF800D1EFE4 /* RulesView.swift */; };
@@ -24,15 +23,13 @@
 		AE8462F629452FEA002E8E5F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8462F529452FEA002E8E5F /* CategoryView.swift */; };
 		AE8462F829453011002E8E5F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8462F729453011002E8E5F /* StartViewController.swift */; };
 		AE8DEE9C298B27110070CF97 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DEE9B298B27110070CF97 /* Music.swift */; };
-		AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE90009229509E7500970C0E /* Gilroy-Regular.ttf */; };
-		AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE90009429509E8600970C0E /* Gilroy-Bold.ttf */; };
 		AE9000972950A22D00970C0E /* NSMutableAttributedString+Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9000962950A22D00970C0E /* NSMutableAttributedString+Ext..swift */; };
+		AE95356029D8602500ACFBEA /* paranoia font final.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE95355F29D8601100ACFBEA /* paranoia font final.ttf */; };
 		AEBE19D6293F79CC00983812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D5293F79CC00983812 /* AppDelegate.swift */; };
 		AEBE19D8293F79CC00983812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE19D7293F79CC00983812 /* SceneDelegate.swift */; };
 		AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DB293F79CC00983812 /* Main.storyboard */; };
 		AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19DE293F79CD00983812 /* Assets.xcassets */; };
 		AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBE19E0293F79CD00983812 /* LaunchScreen.storyboard */; };
-		AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED3D410295E3E030060B212 /* paranoia font.ttf */; };
 		AEFD53A2298C6AF5001F739E /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEFD53A0298C6AF5001F739E /* Music.mp3 */; };
 		AEFD53A3298C6AF5001F739E /* TapSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEFD53A1298C6AF5001F739E /* TapSound.mp3 */; };
 		AEFD53A5298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEFD53A4298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 */; };
@@ -43,7 +40,6 @@
 		147ABF1953AD1D6267A494B0 /* Pods_Paranoia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paranoia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesOnboardingModel.swift; sourceTree = "<group>"; };
 		AE0041DE29894D9E0007516B /* RulesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesCollectionViewCell.swift; sourceTree = "<group>"; };
-		AE0C564729B7AC52007E05D7 /* RulesBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesBackgroundView.swift; sourceTree = "<group>"; };
 		AE267EBA2947D71700D1EFE4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		AE267EBE2947EAF800D1EFE4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
@@ -58,9 +54,8 @@
 		AE8462F529452FEA002E8E5F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		AE8462F729453011002E8E5F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		AE8DEE9B298B27110070CF97 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
-		AE90009229509E7500970C0E /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
-		AE90009429509E8600970C0E /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		AE9000962950A22D00970C0E /* NSMutableAttributedString+Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Ext..swift"; sourceTree = "<group>"; };
+		AE95355F29D8601100ACFBEA /* paranoia font final.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "paranoia font final.ttf"; sourceTree = "<group>"; };
 		AEBE19D2293F79CC00983812 /* Paranoia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paranoia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBE19D5293F79CC00983812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBE19D7293F79CC00983812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +63,6 @@
 		AEBE19DE293F79CD00983812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBE19E1293F79CD00983812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBE19E3293F79CD00983812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AED3D410295E3E030060B212 /* paranoia font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "paranoia font.ttf"; sourceTree = "<group>"; };
 		AEFD53A0298C6AF5001F739E /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music.mp3; sourceTree = "<group>"; };
 		AEFD53A1298C6AF5001F739E /* TapSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TapSound.mp3; sourceTree = "<group>"; };
 		AEFD53A4298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avetis Berberyan, Loneliness.mp3"; sourceTree = "<group>"; };
@@ -110,7 +104,6 @@
 				AE267EBC2947EAEE00D1EFE4 /* RulesViewController.swift */,
 				AE267EBE2947EAF800D1EFE4 /* RulesView.swift */,
 				AE0041DC29894CDE0007516B /* RulesOnboardingModel.swift */,
-				AE0C564729B7AC52007E05D7 /* RulesBackgroundView.swift */,
 				AE0041E3298953E30007516B /* Cell */,
 			);
 			path = Rules;
@@ -128,9 +121,7 @@
 		AE65173B2943FF0900385555 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AED3D410295E3E030060B212 /* paranoia font.ttf */,
-				AE90009229509E7500970C0E /* Gilroy-Regular.ttf */,
-				AE90009429509E8600970C0E /* Gilroy-Bold.ttf */,
+				AE95356129D8620800ACFBEA /* Fonts */,
 				AE65173C2943FF1A00385555 /* Buttons */,
 				AE6517372943F41D00385555 /* Enums&structs.swift */,
 			);
@@ -183,6 +174,14 @@
 				AE2799CC2949E15200AEECC6 /* GameView.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		AE95356129D8620800ACFBEA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE95355F29D8601100ACFBEA /* paranoia font final.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		AEBE19C9293F79CC00983812 = {
@@ -302,12 +301,10 @@
 				AEFD53A3298C6AF5001F739E /* TapSound.mp3 in Resources */,
 				AEBE19E2293F79CD00983812 /* LaunchScreen.storyboard in Resources */,
 				AEFD53A2298C6AF5001F739E /* Music.mp3 in Resources */,
+				AE95356029D8602500ACFBEA /* paranoia font final.ttf in Resources */,
 				AEBE19DF293F79CD00983812 /* Assets.xcassets in Resources */,
 				AEFD53A5298C7C8F001F739E /* Avetis Berberyan, Loneliness.mp3 in Resources */,
-				AE90009529509E8600970C0E /* Gilroy-Bold.ttf in Resources */,
 				AEBE19DD293F79CC00983812 /* Main.storyboard in Resources */,
-				AE90009329509E7600970C0E /* Gilroy-Regular.ttf in Resources */,
-				AED3D411295E3E030060B212 /* paranoia font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +361,6 @@
 				AE65173A2943FB1900385555 /* WhiteDefaultButton.swift in Sources */,
 				AE6517352943F2B800385555 /* UIView+Ext..swift in Sources */,
 				AE6517332943F24300385555 /* StartView.swift in Sources */,
-				AE0C564829B7AC52007E05D7 /* RulesBackgroundView.swift in Sources */,
 				AE0041DD29894CDE0007516B /* RulesOnboardingModel.swift in Sources */,
 				AE8DEE9C298B27110070CF97 /* Music.swift in Sources */,
 				AE0041E029894D9E0007516B /* RulesCollectionViewCell.swift in Sources */,

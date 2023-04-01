@@ -11,7 +11,7 @@ import UIKit
 extension NSMutableAttributedString {
     var fontSize:CGFloat { return 37 }
 //    var boldFont:UIFont { return UIFont(name: "Gilroy-Bold", size: fontSize)! }
-    var normalFont:UIFont { return UIFont(name: "paranoia font", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)}
+    var normalFont:UIFont { return UIFont(name: "paranoia font final", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)}
     
 //    func bold(_ value:String) -> NSMutableAttributedString {
 //

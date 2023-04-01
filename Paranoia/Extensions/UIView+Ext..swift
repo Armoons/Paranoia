@@ -19,14 +19,11 @@ extension UIView {
         let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
         switch page {
         case .startPage:
-            imageViewBackground.image = UIImage(named: "background_image")
+            imageViewBackground.image = Images.startBackground
         case .categoryPage:
             imageViewBackground.image = UIImage(named: "Group 2")
         }
 
-        
-        
-        // you can change the content mode:
         imageViewBackground.contentMode = UIView.ContentMode.scaleAspectFill
         
         self.addSubview(imageViewBackground)

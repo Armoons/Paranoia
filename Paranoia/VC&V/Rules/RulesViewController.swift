@@ -32,10 +32,10 @@ class RulesViewController: UIViewController {
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = Images.backButtonRules
         
         data = [
-            RulesOnboardingModel(image: Images.slideOne),
-            RulesOnboardingModel(image: Images.slideTwo),
-            RulesOnboardingModel(image: Images.slideThree),
-            RulesOnboardingModel(image: Images.slideFour)
+            RulesOnboardingModel(image: Images.slideOne, backgroundImage: Images.strangeCat),
+            RulesOnboardingModel(image: Images.slideTwo, backgroundImage: Images.russianP),
+            RulesOnboardingModel(image: Images.slideThree, backgroundImage: Images.scaredDude),
+            RulesOnboardingModel(image: Images.slideFour, backgroundImage: Images.bigPig)
         ]
         
 //        data = [

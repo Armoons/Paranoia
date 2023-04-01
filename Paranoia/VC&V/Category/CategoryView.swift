@@ -58,14 +58,10 @@ class CategoryView: UIView {
         return b
     }()
     
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.init(name: "Paranoia_font_by_LKA", size: 40)
-        label.textColor = .white
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.text = "Выберите \n категорию"
-        return label
+    private let titleIV: UIImageView = {
+        let iv = UIImageView()
+        iv.image = Images.chooseCategory
+        return iv
     }()
     
     private let titleImage: UIImageView = {
@@ -167,7 +163,7 @@ class CategoryView: UIView {
         
         nextButton.isEnabled = !Game.shared.isCategoryEmpty()
         
-        for ui in [categotyStackView, rexImage, happyImage, random1Image, nextButton, titleLabel] {
+        for ui in [categotyStackView, rexImage, happyImage, random1Image, nextButton, titleIV] {
             self.addSubview(ui)
         }
         
@@ -188,9 +184,11 @@ class CategoryView: UIView {
             $0.top.equalTo(categotyStackView.snp.bottom).offset(40)
         }
         
-        titleLabel.snp.makeConstraints{
+        titleIV.snp.makeConstraints{
             $0.centerX.equalToSuperview()
             $0.topMargin.equalToSuperview().offset(10)
+            $0.width.equalTo(241)
+            $0.height.equalTo(120)
         }
     }
 }

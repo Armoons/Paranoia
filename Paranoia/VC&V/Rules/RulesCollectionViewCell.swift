@@ -12,6 +12,8 @@ class RulesCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "RulesCollectionViewCell"
     private var imageV = UIImageView()
+    private var backImageV = UIImageView()
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,16 +27,23 @@ class RulesCollectionViewCell: UICollectionViewCell {
     
     func setupUI() {
         self.addSubview(imageV)
+        self.addSubview(backImageV)
+        self.sendSubviewToBack(backImageV)
+        
+        self.clipsToBounds = true
         
         imageV.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview().inset(10)
-            $0.top.equalToSuperview()
+            $0.center.equalToSuperview()
+        }
+        
+        backImageV.snp.makeConstraints{
+            $0.center.equalToSuperview()
         }
     }
     
     func setup(_ slide: RulesOnboardingModel) {
         self.imageV.image = slide.image
-        self.backgroundView = RulesBackgroundView()
+        self.backImageV.image = slide.backgroundImage
         
 //        topLabel.text = slide.fLabel
 //        bottomLabel.text = slide.sLabel

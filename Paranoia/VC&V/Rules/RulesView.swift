@@ -86,6 +86,7 @@ extension RulesView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         print("WWW", self.frame.width)
         print("hhh", self.frame.height)
 
-        return CGSize(width: self.frame.width, height: self.frame.height * 2/3)
+//        return CGSize(width: self.frame.width, height: self.frame.height * 2/3)
+        return CGSize(width: self.frame.width, height: self.frame.height)
     }
 }

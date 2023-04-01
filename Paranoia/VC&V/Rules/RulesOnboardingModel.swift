@@ -14,4 +14,5 @@ struct RulesOnboardingModel {
 //    let sLabel: String
 //    let mImage: UIImage
     let image: UIImage
+    let backgroundImage: UIImage
 }
